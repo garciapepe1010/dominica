@@ -4,6 +4,7 @@
 		<jta-data-source>DominicaMySqlDS</jta-data-source>
 		<class>com.adnaloy.dominicaJPA.mainstructure.Parameter</class>
 		<class>com.adnaloy.dominicaJPA.mainstructure.ParameterPK</class>
+		<class>com.adnaloy.dominicaJPA.mainstructure.User</class>
 		<properties>
 			<property name="eclipselink.target-database" value="MySQL"/>
 			<property name="eclipselink.target-server" value="JBoss"/>

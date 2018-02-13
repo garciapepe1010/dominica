@@ -2,6 +2,7 @@ package com.adnaloy.dominicaJPA.mainstructure;
 
 import java.io.Serializable;
 import javax.persistence.*;
+import java.math.BigDecimal;
 import java.util.Date;
 
 
@@ -30,7 +31,10 @@ public class User implements Serializable {
 	private Date dateStart;
 
 	@Column(name="DOMAIN")
-	private java.math.BigDecimal domain;
+	private BigDecimal domain;
+
+	@Column(name="IS_ADMIN")
+	private BigDecimal isAdmin;
 
 	@Column(name="USER_NAME")
 	private String userName;
@@ -65,12 +69,20 @@ public class User implements Serializable {
 		this.dateStart = dateStart;
 	}
 
-	public java.math.BigDecimal getDomain() {
+	public BigDecimal getDomain() {
 		return this.domain;
 	}
 
-	public void setDomain(java.math.BigDecimal domain) {
+	public void setDomain(BigDecimal domain) {
 		this.domain = domain;
+	}
+
+	public BigDecimal getIsAdmin() {
+		return this.isAdmin;
+	}
+
+	public void setIsAdmin(BigDecimal isAdmin) {
+		this.isAdmin = isAdmin;
 	}
 
 	public String getUserName() {
